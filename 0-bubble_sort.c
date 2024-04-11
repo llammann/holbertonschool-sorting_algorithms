@@ -3,27 +3,10 @@
 #include "sort.h"
 
 /**
- * print_array - Prints an array of integers
- * @array: Pointer to the first element of the array
- * @size: Number of elements in the array
- */
-
-void print_array(const int *array, size_t size)
-{
-size_t i;
-for (i = 0; i < size; i++)
-{
-printf("%d", array[i]);
-if (i != size - 1)
-printf(", ");
-}
-printf("\n");
-}
-
-/**
- * bubble_sort - Sorts an array of integers in asc order using Bubble sort
- * @array: Pointer to the first element of the array
- * @size: Number of elements in the array
+ * bubble_sort - Sorts an array of integers in ascending order using
+ *               the Bubble sort algorithm.
+ * @array: The array to sort.
+ * @size: The size of the array.
  */
 
 void bubble_sort(int *array, size_t size)
@@ -44,7 +27,6 @@ temp = array[j];
 array[j] = array[j + 1];
 array[j + 1] = temp;
 swapped = 1;
-printf("Swap %d and %d: ", array[j], array[j + 1]);
 print_array(array, size);
 }
 }
