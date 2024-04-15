@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * quick_sort - Sorts an array of integers in ascending order using Quick Sort
- * @array: the array to be sorted
- * @size: the size of the array
- */
+*quick_sort - Sorts an array of integers in ascending order using Quick Sort
+*@array: the array to be sorted
+*@size: the size of the array
+*/
 
 void quick_sort(int *array, size_t size)
 {
@@ -13,12 +13,12 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * quick_sort_recursive - recursive helper function fot a Quick Sort
- * @array: the array to be sorted
- * @low: the lower index of the partition
- * @high: the higher index of the partition
- * @size: the size of the array
- */
+*quick_sort_recursive - recursive helper function fot a Quick Sort
+*@array: the array to be sorted
+*@low: the lower index of the partition
+*@high: the higher index of the partition
+*@size: the size of the array
+*/
 
 void quick_sort_recursive(int *array, int low, int high, size_t size)
 {
@@ -34,13 +34,13 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 }
 
 /**
- * lomuto_partition - implementation of the Lomuto partition
- * @array: the array to be partition
- * @low: the lower index of the partition
- * @high: the higher index of the partition
- * @size: the size of the array
- * Return: the index of the pivot element
- */
+*lomuto_partition - implementation of the Lomuto partition
+*@array: the array to be partition
+*@low: the lower index of the partition
+*@high: the higher index of the partition
+*@size: the size of the array
+*Return: the index of the pivot element
+*/
 
 int lomuto_partition(int *array, int low, int high, size_t size)
 {
@@ -65,11 +65,11 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * swap - swaps two elements in an array 
- * @array: the array to sort 
- * @i: index of the first element to compare
- * @j: index of the second element to compare
- */
+*swap - swaps two elements in an array
+*@array: the array to sort
+*@i: index of the first element to compare
+*@j: index of the second element to compare
+*/
 
 void swap(int *array, int i, int j)
 {
